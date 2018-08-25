@@ -74,6 +74,7 @@ a:hover {
 }
 
 div.container {
+    overflow: auto;
     width: 900px;
     margin: auto;
     padding: 30px;
@@ -106,6 +107,24 @@ hr {
     width: 100%;
     border: 0;
     background-color: #dddddd;
+}
+
+p {
+    text-align: justify;
+}
+
+.about-img {
+    margin: 30px 30px 15px 0px;
+    width: 250px;
+    height: auto;
+    float: left;
+}
+
+.cleo {
+    width: 250px;
+    height: auto;
+    float: right;
+    margin-left: 30px;
 }
 
 input {
