@@ -109,7 +109,7 @@ hr {
     background-color: #dddddd;
 }
 
-p {
+p.bio {
     text-align: justify;
 }
 
@@ -195,4 +195,8 @@ footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
+}
+
+p.footer {
+    text-align: center;
 }
