@@ -120,6 +120,7 @@ div.container {
 
 p.bio {
     text-align: justify;
+    margin: 30px;
 }
 
 .about-img {
@@ -133,7 +134,7 @@ p.bio {
     width: 250px;
     height: auto;
     float: right;
-    margin-left: 30px;
+    margin: 0px 0px 30px 30px;
 }
 
 div.gallery {
@@ -153,7 +154,7 @@ a.item {
 
 img.gallery-item {
     position: relative;
-    max-width: 440px;
+    max-width: 100%;
     max-height: auto;
 }
 
@@ -200,4 +201,154 @@ p.footer {
 #contact-nav {
     grid-area: contact;
     align-self: center;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        grid-template-columns: 1fr 245px 225px 60px 21px 79px 21px 69px 1fr;
+    }
+    div.container {
+        width: 670px;
+        margin: 0px 1fr 0px 1fr;
+        padding: 20px 20px 20px 20px;
+    }
+    h2 {
+        width: 660px;
+        margin-right: 0px;
+    }
+    input {
+        width: 660px;
+        padding: 10px;
+        margin-right: 0px;
+    }
+    form {
+        width: 670px;
+        margin-right: 0px;
+    }
+    input[type=text] {
+        width: 646px;
+        margin: 0px;
+    }
+    textarea.message {
+        width: 664px;
+        height: 200px;
+        margin: 0px;
+    }
+    hr {
+        margin-right: 0px;
+        width: 670px;
+    }
+    div.galllery {
+        padding: 0px 20px 0px 10px;
+    }
+    div.centered {
+        width: 325px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .about-img {
+        margin: 20px 20px 20px 0px;
+    }
+    .cleo {
+        margin: 10px 0px 20px 20px;
+    }
+    p.bio {
+        margin: 20px 0px 45px 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+   div.container {
+        width: 542px;
+   }
+   header {
+        grid-template-columns: 1fr 245px 90px 60px 21px 79px 21px 69px 1fr;
+    }
+    h2 {
+        width: 542px;
+    }
+    input {
+        width: 542px;
+    }
+    form {
+        width: 542px;
+    }
+    input[type=text] {
+        width: 518px;
+    }
+    textarea.message {
+        width: 536px;
+    }
+    hr {
+        width: 542px;
+    }
+    div.centered {
+        width: 261px;
+    }
+    .about-img {
+        margin: 20px 0px 20px 20px;
+        float: right;
+    }
+    .cleo {
+        margin: 20px 0px 20px 20px;
+        float: right;
+    }
+    p.bio {
+        margin: 20px 0px 20px 1px;
+    }
+}
+@media screen and (max-width: 640px) {
+    div.container {
+       width: 320px;
+    }
+    header {
+        height: 150px;
+        grid-template-columns: 1fr 60px 21px 79px 21px 69px 1fr;
+        grid-template-rows: 80px 70px;
+        grid-template-areas: "name name name name name name name" ". about vl1 portfolio vl2 contact .";
+    }
+    h1 {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+    }
+    h2 {
+        width: 320px;
+    }
+    input {
+        width: 320px;
+    }
+    form {
+        width: 320px;
+    }
+    input[type=text] {
+        width: 296px;
+    }
+    textarea.message {
+        width: 314px;
+    }
+    hr {
+        width: 320px;
+    }
+    div.gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    div.centered {
+        width: 320px;
+    }
+    .about-img {
+        margin: 20px 0px 0px 0px;
+        float: none;
+        width: 100%;
+    }
+    .cleo {
+        margin: 0px;
+        float: none;
+        width: 100%;
+    }
+    p.bio {
+        margin: 20px 0px 20px 1px;
+    }
 }
