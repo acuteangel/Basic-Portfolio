@@ -4,3 +4,4 @@ For my header I used a grid format to properly space my name and the navigation 
 For my portfolio I used semi-transparent black bars with teal text as opposed to teal bars with white text.  I made this decision simply because it worked better visually with the placeholder images I had chosen.
 
 My CSS is sorted by element, prioritizing Sectioning, followed by headings, media, forms, phrasing, miscellaneous(hr), class, then id. 
+=======
